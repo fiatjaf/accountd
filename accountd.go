@@ -1,13 +1,13 @@
-package uud
+package accountd
 
 import (
 	"errors"
 	"strconv"
 
-	napping "gopkg.in/jmcvetta/napping.v3"
+	"gopkg.in/jmcvetta/napping.v3"
 )
 
-var HOST = "https://uud.com"
+var HOST = "https://accountd.xyz"
 
 func VerifyAuth(code string) (LookupResponse, error) {
 	res := LookupResponse{}
